@@ -2,7 +2,7 @@
 
 SARS-CoV-2ゲノムに対するハプロタイプネットワーク作成
 
-- 入力データ
+### 入力データ
 
 DDBJで公開された静岡株47配列を使用する．
 getentryでゲノムFASTA配列をダウンロードする．
@@ -12,24 +12,28 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
 B.1.1.214: 8 
 B.1.1.7: 39
 ```
-0. 配列IDの修正
+### 0. 配列IDの修正
  コメント行に含まれるID名として，hCoV-19/Japan/SZ-NIG-Y21018/2021のような株名のみにすると良い．
  
  ファイル名：SH47_210927.fas
  
-1. MAFFTにて，多重整列を行う．
+### 1. MAFFTにて，多重整列を行う．
  
  コマンド例：mafft --6merpair --thread -1 --keeplength --addfragments SH47_210927.fas MN908947_3.fasta > output1.fas
 
  MN908947_3.fasta：リファレンスゲノム（Wuhan-Hu-1）【各自，ご用意ください．】
 
-2. DNAspでハプロタイプデータを作成する
+### 2. DNAspでハプロタイプデータを作成する
 2-1. output1.fas を DNAspで読み込む．（図１の１）
+
   [DNAsp](http://www.ub.edu/dnasp/)をダウンロードし，セットアップする．
+
 2-2. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．（図１の２）
+
 2-3. その際，出力ファイル形式を選択できるので，NEXUS形式を選択し，ファイルを保存する．（図１の３）
 
 ![Fig1](https://user-images.githubusercontent.com/89957075/134666227-8f696327-e73e-4a63-b6ee-fbbce29ad360.PNG)
+
 図１．DNAspでの実行画面例
 
 4. 出力されたNEXUS形式ファイル（拡張子.nex)を入力ファイルとして，PopARTで読み込む．
