@@ -1,6 +1,6 @@
 # CoV2network
 
-SARS-CoV-2ゲノムに対するハプロタイプネットワーク作成
+SARS-CoV-2ゲノムに対するハプロタイプネットワーク作成例（MAFFT，DNAsp, PopART利用版）
 
 ### 入力データ
 
@@ -36,8 +36,11 @@ B.1.1.7: 39
 
 図１．DNAspでの実行画面例
 
-### 3. 出力されたNEXUS形式ファイル（拡張子.nex)を入力ファイルとして，PopARTで読み込む．
-  【注意】読み込んだとき，CHARLABELSについて，エラーが出るが，無視して良い（図２の１）．
+### 3. ネットワーク作成
+   [PopART](http://popart.otago.ac.nz/index.shtml)で作成する．
+   
+   出力されたNEXUS形式ファイル（拡張子.nex)を入力ファイルとして，PopARTで読み込む．
+    【注意】読み込んだとき，CHARLABELSについて，エラーが出るが，無視して良い（図２の１）．
  
  【Network】-【Median Joining Network】を選択し，実行．(解析結果例：図２の２)
   
