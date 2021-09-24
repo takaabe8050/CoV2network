@@ -78,39 +78,39 @@ B.1.1.7: 39
   各Hapに，対応する項目をカンマ区切りで加える．（例えば，２項目の場合，【Hap_1 1,0】となる．）
  
  BEGIN TRAITS;
- Dimensions NTRAITS=1;
- Format labels=yes missing=? separator=Comma;
- TraitLabels num;
- Matrix
- Hap_1 1
- Hap_2 4
- Hap_3 1
- Hap_4 3
- Hap_5 1
- Hap_6 5
- Hap_7 1
- Hap_8 1
- Hap_9 4
- Hap_10 1
- Hap_11 2
- Hap_12 1
- Hap_13 1
- Hap_14 1
- Hap_15 1
- Hap_16 1
- Hap_17 3
- Hap_18 1
- Hap_19 2
- Hap_20 1
- Hap_21 1
- Hap_22 2
- Hap_23 1
- Hap_24 1
- Hap_25 3
- Hap_26 1
- Hap_27 1
- Hap_28 1
- Hap_29 1
- ;
- END;
+  Dimensions NTRAITS=2;
+  Format labels=yes missing=? separator=Comma;
+  TraitLabels Ref Shizuoka;
+  Matrix
+Hap_1 1,0
+Hap_2 0,4
+Hap_3 0,1
+Hap_4 0,3
+Hap_5 0,1
+Hap_6 0,5
+Hap_7 0,1
+Hap_8 0,1
+Hap_9 0,4
+Hap_10 0,1
+Hap_11 0,2
+Hap_12 0,1
+Hap_13 0,1
+Hap_14 0,1
+Hap_15 0,1
+Hap_16 0,1
+Hap_17 0,3
+Hap_18 0,1
+Hap_19 0,2
+Hap_20 0,1
+Hap_21 0,1
+Hap_22 0,2
+Hap_23 0,1
+Hap_24 0,1
+Hap_25 0,3
+Hap_26 0,1
+Hap_27 0,1
+Hap_28 0,1
+Hap_29 0,1
+;
+END;
  ```
