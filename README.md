@@ -39,7 +39,7 @@ B.1.1.7: 39
 
 ファイル名：SH47_210927.nex
 
-![Fig1](https://user-images.githubusercontent.com/89957075/134666227-8f696327-e73e-4a63-b6ee-fbbce29ad360.PNG)
+![Fig1](https://user-images.githubusercontent.com/89957075/134689148-6e42e2a4-7ebd-4976-8432-cdae9668b70d.PNG)
 
 図１．DNAspでの実行画面例
 
