@@ -23,7 +23,8 @@ B.1.1.7: 39
  
  コマンド例：mafft --6merpair --thread -1 --keeplength --addfragments SH47_210927.fas MN908947_3.fasta > output1.fas
 
- MN908947_3.fasta：リファレンスゲノム（Wuhan-Hu-1）【各自，ご用意ください．】
+ MN908947_3.fasta：リファレンスゲノム（Wuhan-Hu-1）【各自，ダウンロードしてご用意ください．】
+ http://getentry.ddbj.nig.ac.jp/getentry/na/MN908947.3/?format=fasta&filetype=html&trace=true&show_suppressed=false&limit=10
 
 ### 2. DNAspでハプロタイプデータを作成する
   [DNAsp](http://www.ub.edu/dnasp/)で作成する．
