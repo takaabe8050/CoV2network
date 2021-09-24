@@ -24,9 +24,11 @@ B.1.1.7: 39
  MN908947_3.fasta：リファレンスゲノム（Wuhan-Hu-1）【各自，ご用意ください．】
 
 ### 2. DNAspでハプロタイプデータを作成する
+  [DNAsp](http://www.ub.edu/dnasp/)で作成する．
+
 2-1. output1.fas を DNAspで読み込む．（図１の１）
 
-  [DNAsp](http://www.ub.edu/dnasp/)をダウンロードし，セットアップする．
+*[注意]ATGC以外が含まれると，エラーとなる．*
 
 2-2. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．（図１の２）
 
