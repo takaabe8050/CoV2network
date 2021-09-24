@@ -54,9 +54,9 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
  '''
  BEGIN TRAITS;
  Dimensions NTRAITS=1;
-   Format labels=yes missing=? separator=Comma;
-   TraitLabels num;
-   Matrix
+ Format labels=yes missing=? separator=Comma;
+ TraitLabels num;
+ Matrix
  Hap_1 1
  Hap_2 4
  Hap_3 1
