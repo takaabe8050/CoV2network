@@ -65,7 +65,7 @@ B.1.1.7: 39
   
   複数のTRAITSを設定し，色分けすることもできる．
 
-![Fig3](https://user-images.githubusercontent.com/89957075/134666239-b01d2477-c2c4-4b5b-aebd-01f5fd9b3cad.PNG)
+![Fig3](https://user-images.githubusercontent.com/89957075/134686954-44680b80-b1b6-462e-97fc-f488c953ce10.png)
 
 図３．TRAITS情報を加えたネットワーク結果
  
