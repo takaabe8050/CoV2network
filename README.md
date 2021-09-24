@@ -17,7 +17,8 @@ B.1.1.7: 39
  
  ファイル名：SH47_210927.fas
  
-### 1. MAFFTにて，多重整列を行う．
+### 1. リファレンスゲノムとのマルチプルアラインメントを行う．
+ [MAFFT](https://mafft.cbrc.jp/alignment/software/)で作成する．
  
  コマンド例：mafft --6merpair --thread -1 --keeplength --addfragments SH47_210927.fas MN908947_3.fasta > output1.fas
 
