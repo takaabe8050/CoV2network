@@ -15,7 +15,8 @@ B.1.1.7: 39
 ### 0. 配列IDの修正
  コメント行に含まれるID名として，hCoV-19/Japan/SZ-NIG-Y21018/2021のような株名のみにすると良い．
  
- ファイル名：SH47_210927.fas
+ サンプルファイル：SH47_210927.fas
+ 
  
 ### 1. リファレンスゲノムとのマルチプルアラインメントを行う．
  [MAFFT](https://mafft.cbrc.jp/alignment/software/)で作成する．
@@ -29,11 +30,13 @@ B.1.1.7: 39
 
 2-1. output1.fas を DNAspで読み込む．（図１の１）
 
-*[注意]ATGC以外が含まれると，エラーとなる．*
+*注意：ATGC以外が含まれると，エラーとなる．*
 
 2-2. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．（図１の２）
 
 2-3. その際，出力ファイル形式を選択できるので，NEXUS形式を選択し，ファイルを保存する．（図１の３）
+
+ファイル名：SH47_210927.nex
 
 ![Fig1](https://user-images.githubusercontent.com/89957075/134666227-8f696327-e73e-4a63-b6ee-fbbce29ad360.PNG)
 
@@ -42,7 +45,7 @@ B.1.1.7: 39
 ### 3. ネットワーク作成
    [PopART](http://popart.otago.ac.nz/index.shtml)で作成する．
    
-   出力されたNEXUS形式ファイル（拡張子.nex)を入力ファイルとして，PopARTで読み込む．
+   出力されたNEXUS形式ファイル（SH47_210927.nex)を入力ファイルとして，PopARTで読み込む．
     【注意】読み込んだとき，CHARLABELSについて，エラーが出るが，無視して良い（図２の１）．
  
  【Network】-【Median Joining Network】を選択し，実行．(解析結果例：図２の２)
