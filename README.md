@@ -23,13 +23,14 @@ B.1.1.7: 39
 
  MN908947_3.fasta：リファレンスゲノム（Wuhan-Hu-1）【各自，ご用意ください．】
 
-2.output1.fas を DNAspで読み込む．
- 
- [DNAsp](http://www.ub.edu/dnasp/)をダウンロードし，セットアップする．
- 
-3. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．
- 
- その際，出力ファイル形式を選択できるので，NEXUS形式を選択し，ファイルを保存する．
+2. DNAspでハプロタイプデータを作成する
+2-1. output1.fas を DNAspで読み込む．（図１の１）
+  [DNAsp](http://www.ub.edu/dnasp/)をダウンロードし，セットアップする．
+2-2. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．（図１の２）
+2-3. その際，出力ファイル形式を選択できるので，NEXUS形式を選択し，ファイルを保存する．（図１の３）
+
+![Fig1](https://user-images.githubusercontent.com/89957075/134666227-8f696327-e73e-4a63-b6ee-fbbce29ad360.PNG)
+図１．DNAspでの実行画面例
 
 4. 出力されたNEXUS形式ファイル（拡張子.nex)を入力ファイルとして，PopARTで読み込む．
   【注意】その際，CHARLABELSについて，エラーが出るが，無視して良い．
@@ -39,6 +40,7 @@ B.1.1.7: 39
   Median Joining Networkは，サンプルサイズが大きく，遺伝的距離が小さい種内の系統関係を見るのに適したネットワーク作成法．
   
   Epsilonは，重み付けされた遺伝距離の尺度である．基本は，「0」が良い．
+![Fig2](https://user-images.githubusercontent.com/89957075/134666234-d1ed8f60-1b90-4740-85d6-57a1ab267804.PNG)
 
 
  4-1．NEXUS形式に，TRAITS情報を追加する．
@@ -89,3 +91,5 @@ B.1.1.7: 39
  ;
  END;
  ```
+![Fig3](https://user-images.githubusercontent.com/89957075/134666239-b01d2477-c2c4-4b5b-aebd-01f5fd9b3cad.PNG)
+図３．TRAITS情報を加えたネットワーク結果
