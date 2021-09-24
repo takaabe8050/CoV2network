@@ -51,7 +51,7 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
  NTRAITSを設定した項目数にする．
  各Hapに，対応する項目をカンマ区切りで加える．（例えば，２項目の場合，【Hap_1 1,0】となる．）
  
- '''
+ ```
  BEGIN TRAITS;
  Dimensions NTRAITS=1;
  Format labels=yes missing=? separator=Comma;
@@ -88,4 +88,4 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
  Hap_29 1
  ;
  END;
- '''
+ ```
