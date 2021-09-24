@@ -7,11 +7,11 @@ SARS-CoV-2ゲノムに対するハプロタイプネットワーク作成
 DDBJで公開された静岡株47配列を使用する．
 getentryでゲノムFASTA配列をダウンロードする．
 http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filetype=text&trace=true&show_suppressed=false&limit=100
-
+```
 47配列のPANGO lineage内訳
 B.1.1.214: 8 
 B.1.1.7: 39
-
+```
 0. 配列IDの修正
 
   コメント行に含まれるID名として，hCoV-19/Japan/SZ-NIG-Y21018/2021のような株名のみにすると良い．
