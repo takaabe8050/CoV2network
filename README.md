@@ -9,7 +9,16 @@ getentryでゲノムFASTA配列をダウンロードする．
 http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filetype=text&trace=true&show_suppressed=false&limit=100
 ```
 47配列のPANGO lineage内訳
-B.1.1.214: 8 
+B.1.1.214: 8
+  BS001152 hCoV-19/Japan/SZ-NIG-Y21030/2021
+  BS001154 hCoV-19/Japan/SZ-NIG-Y21032/2021
+  BS001155 hCoV-19/Japan/SZ-NIG-Y21033/2021
+  BS001157 hCoV-19/Japan/SZ-NIG-Y21035/2021
+  BS001158 hCoV-19/Japan/SZ-NIG-Y21036/2021
+  BS001159 hCoV-19/Japan/SZ-NIG-Y21037/2021
+  BS001160 hCoV-19/Japan/SZ-NIG-Y21038/2021
+  BS001179 hCoV-19/Japan/SZ-NIG-Y21077/2021
+
 B.1.1.7: 39
 ```
 ### 0. 配列IDの修正
