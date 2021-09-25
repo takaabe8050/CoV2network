@@ -4,12 +4,12 @@ SARS-CoV-2ゲノムに対するハプロタイプネットワーク作成例（M
 
 ### 入力データ
 
-DDBJで公開された静岡株47配列を使用する．
-getentryでゲノムFASTA配列をダウンロードする．
+DDBJで公開された[静岡株47配列](https://www.ddbj.nig.ac.jp/news/ja/2021-09-09_1.html)を使用する．
+DDBJのgetentryサービスでゲノムFASTA配列をダウンロードする．
 http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filetype=text&trace=true&show_suppressed=false&limit=100
 ```
-47配列のPANGO lineage内訳
-B.1.1.214: 8
+以下に，47配列のPANGO lineage内訳を示す．
+１．B.1.1.214: 8配列（以下，アクセッション番号と株名）
   BS001152 hCoV-19/Japan/SZ-NIG-Y21030/2021
   BS001154 hCoV-19/Japan/SZ-NIG-Y21032/2021
   BS001155 hCoV-19/Japan/SZ-NIG-Y21033/2021
@@ -19,7 +19,7 @@ B.1.1.214: 8
   BS001160 hCoV-19/Japan/SZ-NIG-Y21038/2021
   BS001179 hCoV-19/Japan/SZ-NIG-Y21077/2021
 
-B.1.1.7: 39
+２．B.1.1.7: 39配列
 ```
 ### 0. 配列IDの修正
  コメント行に含まれるID名は，hCoV-19/Japan/SZ-NIG-Y21018/2021のような株名のみにしたほうが良い．
@@ -68,7 +68,7 @@ B.1.1.7: 39
 
 図２ PopARTの実行例
 
-NEXUSファイルの記載内容について
+NEXUSファイル内で，主に，解析結果の解釈に使用する項目を，以下に説明する．
 ```
 #各HapIDに含まれる株情報【Hap# 件数　株名（スペース区切り）】
 [Hap#  Freq. Sequences]
