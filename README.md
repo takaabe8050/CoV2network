@@ -44,7 +44,7 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
 
 2-2. 読み込み完了後，【Generate】-【Haplotype Data File..】を選択．（図１の２）
 
-2-3. その際，出力ファイル形式を選択できるので，NEXUS形式を選択し，ファイルを保存する．（図１の３）
+2-3. その際，出力ファイル形式を選択できる（図１の３の右下）ので，NEXUS形式を選択し，ファイルを保存する．（図１の３）
 
 ファイル名：SH47_210927.nex
 
@@ -56,7 +56,9 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/BS001145-BS001191/?format=fasta&filet
    [PopART](http://popart.otago.ac.nz/index.shtml)で作成する．
    
    出力されたNEXUS形式ファイル（SH47_210927.nex)を入力ファイルとして，PopARTで読み込む．
-    【注意】読み込んだとき，CHARLABELSについて，エラーが出るが，無視して良い（図２の１）．
+   右ウィンドウの【Alignment】にアラインメント結果が出力されていれば，読み込みは成功している．
+ 　
+  　【注意】読み込んだとき，CHARLABELSについて，エラーが出るが，無視して良い（図２の１）．
  
  【Network】-【Median Joining Network】を選択し，実行．(解析結果例：図２の２)
   
@@ -133,7 +135,7 @@ CHARLABELS #SNVが検出された塩基位置情報．サイト別に記載
 
 ### 3-1. 【参考】NEXUS形式ファイルに，TRAITS情報を追加する．
  
-  NEXUSファイルの[Hap#  Freq. Sequences]から，ハプロタイプに含まれる株の件数や採取地，採取月などをTRAITS情報として付与すると，
+  NEXUSファイルの[Hap#  Freq. Sequences]から，ハプロタイプに含まれる株の件数や採取地，採取月などをTRAITS情報を追記すると，
   ノードの大きさで件数，サンプルの採取地，採取月などを色別に表示することができる（図３）．（入力ファイル名：SH47_210927_add_trait.nex）
   
   複数のTRAITSを設定し，色分けすることもできる．
@@ -149,7 +151,8 @@ CHARLABELS #SNVが検出された塩基位置情報．サイト別に記載
   ここで，項目を追加する場合，TraitLabelsに，スペース区切りで，項目名を追加する．
   NTRAITSを設定した項目数にする．
   各Hapに，対応する項目をカンマ区切りで加える．（例えば，２項目の場合，【Hap_1 1,0】となる．）
- 
+　ノードの大きさは，設定した項目に含まれる数の合計値となる．
+
  BEGIN TRAITS;
   Dimensions NTRAITS=2;
   Format labels=yes missing=? separator=Comma;
